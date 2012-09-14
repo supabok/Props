@@ -1,0 +1,75 @@
+@import compass
+@charset "utf-8"
+
+body 
+  background: #d4d4d4 url("../images/background.png")
+  text-align: center
+  font-family: sans-serif
+
+
+.score
+  p
+    display: inline-block
+    background: #ffeecc
+    margin: 0
+    padding: 0
+    line-height: 2em
+    width: 100%
+
+.container
+  text-align: center
+
+  .questionHolder
+    margin-bottom: 50px
+    list-style-type: none
+
+    ul
+      margin: 0
+      padding: 0
+      width: 40%
+
+      li
+        background: #75715e
+        padding: 5px 0
+        margin: 5px 0
+
+  .scoreDisplay
+    color: #759AE9
+    font-size: 56px
+    font-weight: bold
+    margin:  0
+    +text-shadow(rgba(0, 0, 0, 0.3) 0 1px 0)
+
+  a
+    text-decoration: none
+    background-color: #759AE9
+    +background-image(linear-gradient(center top , #759AE9 0%, #376FE0 50%, #1A5AD9 50%, #2463DE 100%))
+
+    +border-radius(3px)
+    border-color: #1F58CC #1B4DB3 #174299
+    border-style: solid
+    border-width: 1px
+
+    +box-shadow(rgba(57, 140, 255, 0.8) 0 0 2px 0 inset)
+
+    color: #fff
+    font-size: 16px
+    font-weight: bold
+    +text-shadow(rgba(0, 0, 0, 0.3) 0 1px 0)
+
+    padding: 10px
+    margin-right: 10px
+    width: 115px
+    cursor: pointer
+
+    &:focus, &:hover
+      background-color: #5d89e8
+      +background-image(linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%))
+
+    &:active
+      border-top: 1px solid #1b4db3
+      border-right: 1px solid #174299
+      border-bottom: 1px solid #133780
+      border-left: 1px solid #174299
+      +box-shadow(#1a47a0 0 0 5px 2px inset, #eee 0 1px 0)
+
